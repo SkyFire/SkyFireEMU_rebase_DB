@@ -16,11 +16,10 @@ CREATE TABLE `playercreateinfo_item` (
   `itemid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `amount` tinyint(3) NOT NULL DEFAULT '1',
   KEY `playercreateinfo_race_class_index` (`race`,`class`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Start player items';
 
 LOCK TABLES `playercreateinfo_item` WRITE;
 /*!40000 ALTER TABLE `playercreateinfo_item` DISABLE KEYS */;
-INSERT INTO `playercreateinfo_item` VALUES (1,6,40582,-1),(2,6,40582,-1),(3,6,40582,-1),(4,6,40582,-1),(5,6,40582,-1),(6,6,40582,-1),(7,6,40582,-1),(8,6,40582,-1),(9,6,40582,-1),(10,6,40582,-1),(11,6,40582,-1);
 /*!40000 ALTER TABLE `playercreateinfo_item` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
