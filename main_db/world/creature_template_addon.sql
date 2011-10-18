@@ -23,6 +23,7 @@ CREATE TABLE `creature_template_addon` (
 
 LOCK TABLES `creature_template_addon` WRITE;
 /*!40000 ALTER TABLE `creature_template_addon` DISABLE KEYS */;
+INSERT INTO `creature_template_addon` VALUES (3,0,0,0,1,0,'29266 0 ');
 /*!40000 ALTER TABLE `creature_template_addon` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
