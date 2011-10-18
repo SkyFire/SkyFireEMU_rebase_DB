@@ -11,8 +11,8 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 DROP TABLE IF EXISTS `game_event_quest_condition`;
 CREATE TABLE `game_event_quest_condition` (
-  `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event.',
   `quest` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `eventEntry` mediumint(8) unsigned NOT NULL,
   `condition_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `num` float DEFAULT '0',
   PRIMARY KEY (`quest`)

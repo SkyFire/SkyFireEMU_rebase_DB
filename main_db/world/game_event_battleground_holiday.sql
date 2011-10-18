@@ -18,7 +18,6 @@ CREATE TABLE `game_event_battleground_holiday` (
 
 LOCK TABLES `game_event_battleground_holiday` WRITE;
 /*!40000 ALTER TABLE `game_event_battleground_holiday` DISABLE KEYS */;
-INSERT INTO `game_event_battleground_holiday` VALUES (18,2),(19,4),(20,8),(21,128);
 /*!40000 ALTER TABLE `game_event_battleground_holiday` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

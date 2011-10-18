@@ -20,7 +20,7 @@ CREATE TABLE `version` (
 
 LOCK TABLES `version` WRITE;
 /*!40000 ALTER TABLE `version` DISABLE KEYS */;
-INSERT INTO `version` VALUES ('SkyFireEMU rev. 0000-00-00 00:00:00 +0000 (Archived) (Win32, Release)','Archived','SFDB_4.0.6a_0.1.2_04-09-2011','SkyFireAI 406.01.20',0);
+INSERT INTO `version` VALUES ('SkyFireEMU rev. 2011-10-18 13:43:18 -0500 (62e16e51516c) (Win32, Release)','62e16e51516c','Blank','Blank',0);
 /*!40000 ALTER TABLE `version` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

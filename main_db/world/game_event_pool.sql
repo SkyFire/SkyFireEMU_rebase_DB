@@ -18,7 +18,6 @@ CREATE TABLE `game_event_pool` (
 
 LOCK TABLES `game_event_pool` WRITE;
 /*!40000 ALTER TABLE `game_event_pool` DISABLE KEYS */;
-INSERT INTO `game_event_pool` VALUES (2,9867);
 /*!40000 ALTER TABLE `game_event_pool` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

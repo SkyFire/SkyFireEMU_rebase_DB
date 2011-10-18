@@ -17,7 +17,7 @@ CREATE TABLE `playercreateinfo_spell_custom` (
   `Note` varchar(255) DEFAULT NULL,
   `Active` tinyint(3) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`race`,`class`,`Spell`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='CTDB Customs start player spells';
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `playercreateinfo_spell_custom` WRITE;
 /*!40000 ALTER TABLE `playercreateinfo_spell_custom` DISABLE KEYS */;

@@ -19,7 +19,7 @@ CREATE TABLE `game_event_npc_vendor` (
   `incrtime` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `ExtendedCost` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`guid`,`item`),
-  KEY `slot` (`slot`)
+  KEY `slot` (`slot`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_npc_vendor` WRITE;

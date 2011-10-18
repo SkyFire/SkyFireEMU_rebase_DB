@@ -22,7 +22,6 @@ CREATE TABLE `disables` (
 
 LOCK TABLES `disables` WRITE;
 /*!40000 ALTER TABLE `disables` DISABLE KEYS */;
-INSERT INTO `disables` VALUES (3,10,0,'','',''),(3,11,0,'','',''),(0,23789,8,'','','Stoneclaw Totem TEST - can crash client by spawning too many totems'),(0,61904,8,'','','Magma Totem TEST - can crash client by spawning too many totems');
 /*!40000 ALTER TABLE `disables` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;

@@ -13,12 +13,11 @@ DROP TABLE IF EXISTS `game_event_arena_seasons`;
 CREATE TABLE `game_event_arena_seasons` (
   `eventEntry` tinyint(3) unsigned NOT NULL COMMENT 'Entry of the game event',
   `season` tinyint(3) unsigned NOT NULL COMMENT 'Arena season number',
-  UNIQUE KEY `season` (`season`,`eventEntry`)
+  UNIQUE KEY `season` (`season`,`eventEntry`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 LOCK TABLES `game_event_arena_seasons` WRITE;
 /*!40000 ALTER TABLE `game_event_arena_seasons` DISABLE KEYS */;
-INSERT INTO `game_event_arena_seasons` VALUES (124,1),(125,2),(126,3),(127,4),(128,5),(129,6),(130,7),(131,8);
 /*!40000 ALTER TABLE `game_event_arena_seasons` ENABLE KEYS */;
 UNLOCK TABLES;
 DELIMITER ;;
