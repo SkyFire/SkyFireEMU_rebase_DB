@@ -27,6 +27,7 @@ SET port=3306
 SET dumppath=.\dump\
 SET mysqlpath=.\dep\mysql\
 SET devsql=.\main_db\world\
+SET procsql=.\main_db\procs\
 SET changsql=.\world_updates
 SET local_sp=\main_db\locals\spanish\
 SET local_gr=\main_db\locals\german\
@@ -83,6 +84,14 @@ ECHO CREATE database IF NOT EXISTS `%world_db%`; >> %devsql%\databaseclean.sql
 ECHO Lets make a clean database.
 ECHO Importing Data now...
 ECHO.
+ECHO. Adding Stored Procedures
+for %%C in (%procsql%\*.sql) do (
+	ECHO import: %%~nxC
+	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
+)
+ECHO Stored Procedures imported sucesfully!
+ECHO.
+ECHO Installing World Data
 FOR %%C IN (%devsql%\*.sql) DO (
 	ECHO Importing: %%~nxC
 	%mysqlpath%\mysql --host=%host% --user=%user% --password=%pass% --port=%port% %world_db% < "%%~fC"
@@ -115,7 +124,7 @@ setlocal enabledelayedexpansion
 FOR %%C IN (%devsql%\*.sql) DO (
 	SET /A Count2+=1
 	ECHO Dumping [!Count2!/%Count%] %%~nC
-	%mysqlpath%\mysqldump --host=%host% --user=%user% --password=%pass% --port=%port% --routines --skip-comments %world_db% %%~nC > %dumppath%\%%~nxC
+	%mysqlpath%\mysqldump --host=%host% --user=%user% --password=%pass% --port=%port% --skip-comments %world_db% %%~nC > %dumppath%\%%~nxC
 )
 endlocal 
 
