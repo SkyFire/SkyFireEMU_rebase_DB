@@ -23,6 +23,7 @@ CREATE TABLE `vehicle_template_accessory` (
 
 LOCK TABLES `vehicle_template_accessory` WRITE;
 /*!40000 ALTER TABLE `vehicle_template_accessory` DISABLE KEYS */;
+INSERT INTO `vehicle_template_accessory` VALUES (32823,34812,0,1,'Bountiful Table - The Turkey Chair',8,0),(32823,34823,1,1,'Bountiful Table - The Cranberry Chair',8,0),(32823,34819,2,1,'Bountiful Table - The Stuffing Chair',8,0),(32823,34824,3,1,'Bountiful Table - The Sweet Potato Chair',8,0),(32823,34822,4,1,'Bountiful Table - The Pie Chair',8,0),(32823,32830,5,1,'Bountiful Table - Food Holder',8,0),(32823,32840,6,1,'Bountiful Table - Plate Holder',8,0),(32830,32824,0,1,'Food Holder - [PH] Pilgrim\'s Bounty Table - Turkey',8,0),(32830,32827,1,1,'Food Holder - [PH] Pilgrim\'s Bounty Table - Cranberry Sauce',8,0),(32830,32831,2,1,'Food Holder - [PH] Pilgrim\'s Bounty Table - Stuffing',8,0),(32830,32825,3,1,'Food Holder - [PH] Pilgrim\'s Bounty Table - Yams',8,0),(32830,32829,4,1,'Food Holder - [PH] Pilgrim\'s Bounty Table - Pie',8,0),(32840,32839,0,1,'Plate Holder - Sturdy Plate',8,0),(32840,32839,1,1,'Plate Holder - Sturdy Plate',8,0),(32840,32839,2,1,'Plate Holder - Sturdy Plate',8,0),(32840,32839,3,1,'Plate Holder - Sturdy Plate',8,0),(32840,32839,4,1,'Plate Holder - Sturdy Plate',8,0);
 /*!40000 ALTER TABLE `vehicle_template_accessory` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
