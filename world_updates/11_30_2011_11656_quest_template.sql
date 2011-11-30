@@ -1,0 +1,2 @@
+-- Burn in Effigy (http://www.wowhead.com/quest=11656) completion text
+UPDATE `quest_template` SET `OfferRewardText`='A show of resistance to the Kvaldir savages might be what is needed to save my people at the other encampments. Perhaps the Kvaldir will rethink their actions should they believe that retribution will come.' WHERE `entry`=11656;
